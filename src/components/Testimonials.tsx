@@ -24,36 +24,36 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-24 px-6 md:px-12">
+    <section id="testimonials" className="py-16 md:py-24 px-4 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center mb-10 md:mb-16 animate-fade-in-up">
+          <h2 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4">
             ユーザーの声
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto">
             しゃべるノートを活用している方々からの声をご紹介します
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-5 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 animate-fade-in-up"
+              className="bg-white p-4 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-slate-100 animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-center mb-4">
+              <div className="flex items-center mb-3 md:mb-4">
                 <img 
                   src={testimonial.avatar} 
                   alt={testimonial.name} 
-                  className="h-12 w-12 rounded-full mr-4 border-2 border-primary/20"
+                  className="h-10 w-10 md:h-12 md:w-12 rounded-full mr-3 md:mr-4 border-2 border-primary/20"
                 />
                 <div>
-                  <h4 className="font-semibold">{testimonial.name}</h4>
-                  <p className="text-sm text-slate-500">{testimonial.title}</p>
+                  <h4 className="font-semibold text-sm md:text-base">{testimonial.name}</h4>
+                  <p className="text-xs md:text-sm text-slate-500">{testimonial.title}</p>
                 </div>
               </div>
-              <blockquote className="text-slate-600 italic">
+              <blockquote className="text-sm md:text-base text-slate-600 italic line-clamp-4 md:line-clamp-none">
                 "{testimonial.quote}"
               </blockquote>
             </div>
