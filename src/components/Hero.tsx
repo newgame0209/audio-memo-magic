@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-[2.5rem] transform rotate-3 scale-[0.97]"></div>
           <div className="glass rounded-[2.5rem] overflow-hidden border-t border-l border-white/50 shadow-xl transform -rotate-3">
             <img 
-              src="/lovable-uploads/42dcbe65-935d-4773-96ce-463298ccb6db.png" 
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
               alt="しゃべるノートのイメージ" 
               className="w-full h-auto object-cover"
             />
