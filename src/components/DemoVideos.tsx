@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Button } from '@/components/ui/button';
+import { Play } from 'lucide-react';
 
 const DemoVideos = () => {
   return (
@@ -19,10 +21,7 @@ const DemoVideos = () => {
             <div className="relative pb-[56.25%] overflow-hidden">
               <video 
                 className="absolute inset-0 w-full h-full object-cover"
-                autoPlay
-                muted
-                loop
-                playsInline
+                controls
               >
                 <source src="https://jikkenpro.netlify.app/videos/speaking-note-demo1.mp4" type="video/mp4" />
                 お使いのブラウザはビデオタグをサポートしていません。
@@ -40,10 +39,7 @@ const DemoVideos = () => {
             <div className="relative pb-[56.25%] overflow-hidden">
               <video 
                 className="absolute inset-0 w-full h-full object-cover"
-                autoPlay
-                muted
-                loop
-                playsInline
+                controls
               >
                 <source src="https://jikkenpro.netlify.app/videos/speaking-note-demo2.mp4" type="video/mp4" />
                 お使いのブラウザはビデオタグをサポートしていません。
