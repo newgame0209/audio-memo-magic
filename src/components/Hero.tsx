@@ -5,50 +5,50 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="pt-28 pb-24 md:pt-40 md:pb-32 px-6 md:px-12 hero-gradient relative overflow-hidden">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section className="pt-20 pb-20 md:pt-28 md:pb-24 lg:pt-40 lg:pb-32 px-4 md:px-6 lg:px-12 hero-gradient relative overflow-hidden">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div className="animate-fade-in-up">
-          <div className="inline-block bg-secondary px-4 py-1.5 rounded-full text-sm font-medium text-primary mb-6">
+          <div className="inline-block bg-secondary px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium text-primary mb-4 md:mb-6">
             新しい記憶の定着方法
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
             書いて覚える。<br />
             <span className="text-primary">聞いて</span>定着する。
           </h1>
-          <p className="text-lg text-slate-600 mb-8 max-w-xl">
+          <p className="text-base md:text-lg text-slate-600 mb-6 md:mb-8 max-w-xl">
             iPadやiPhoneで手書きしたメモや記録をAIが音声化し、リピート再生で記憶定着を助けるノートアプリです。
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="btn-primary flex items-center group text-base py-6">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <Button className="btn-primary flex items-center group text-sm sm:text-base py-5 sm:py-6 w-full sm:w-auto justify-center">
               無料で始める
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="outline" className="btn-secondary text-base py-6">
+            <Button variant="outline" className="btn-secondary text-sm sm:text-base py-5 sm:py-6 w-full sm:w-auto justify-center mt-3 sm:mt-0">
               機能をもっと見る
             </Button>
           </div>
         </div>
         
-        <div className="relative animate-slide-in-right">
-          <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-[2.5rem] transform rotate-3 scale-[0.97]"></div>
-          <div className="glass rounded-[2.5rem] overflow-hidden border-t border-l border-white/50 shadow-xl transform -rotate-3">
+        <div className="relative animate-slide-in-right mt-8 md:mt-0">
+          <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-xl md:rounded-[2.5rem] transform rotate-3 scale-[0.97]"></div>
+          <div className="glass rounded-xl md:rounded-[2.5rem] overflow-hidden border-t border-l border-white/50 shadow-xl transform -rotate-3">
             <img 
-              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+              src="https://jikkenpro.netlify.app/images/note.jpg" 
               alt="しゃべるノートのイメージ" 
               className="w-full h-auto object-cover"
             />
           </div>
           
-          <div className="absolute -bottom-6 -right-6 glass p-4 rounded-xl animate-floating shadow-sm">
+          <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 glass p-3 md:p-4 rounded-lg md:rounded-xl animate-floating shadow-sm">
             <div className="flex items-center space-x-2">
-              <div className="h-3 w-3 bg-primary rounded-full"></div>
-              <p className="text-sm font-medium">AI音声で復習中...</p>
+              <div className="h-2 w-2 md:h-3 md:w-3 bg-primary rounded-full"></div>
+              <p className="text-xs md:text-sm font-medium">AI音声で復習中...</p>
             </div>
           </div>
         </div>
       </div>
       
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-16 md:h-24 bg-gradient-to-t from-background to-transparent"></div>
     </section>
   );
 };
