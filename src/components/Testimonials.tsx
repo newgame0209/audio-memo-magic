@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { HoverCard, HoverCardTrigger, HoverCardContent } from '@/components/ui/hover-card';
 
 const testimonials = [
   {
@@ -37,26 +38,48 @@ const Testimonials = () => {
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {testimonials.map((testimonial, index) => (
-            <div 
-              key={index} 
-              className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 animate-fade-in-up h-auto"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="flex items-center mb-2 md:mb-3">
-                <img 
-                  src={testimonial.avatar} 
-                  alt={testimonial.name} 
-                  className="h-8 w-8 md:h-10 md:w-10 rounded-full mr-3 border-2 border-primary/20"
-                />
-                <div>
-                  <h4 className="font-semibold text-sm md:text-base">{testimonial.name}</h4>
-                  <p className="text-xs text-slate-500">{testimonial.title}</p>
+            <HoverCard key={index}>
+              <HoverCardTrigger asChild>
+                <div 
+                  className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 animate-fade-in-up h-auto cursor-pointer
+                            transition-all duration-300 hover:shadow-md hover:border-primary/30 hover:bg-primary/5"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="flex items-center mb-2 md:mb-3">
+                    <img 
+                      src={testimonial.avatar} 
+                      alt={testimonial.name} 
+                      className="h-8 w-8 md:h-10 md:w-10 rounded-full mr-3 border-2 border-primary/20"
+                    />
+                    <div>
+                      <h4 className="font-semibold text-sm md:text-base">{testimonial.name}</h4>
+                      <p className="text-xs text-slate-500">{testimonial.title}</p>
+                    </div>
+                  </div>
+                  <blockquote className="text-xs md:text-sm text-slate-600 italic line-clamp-5 md:line-clamp-none">
+                    "{testimonial.quote}"
+                  </blockquote>
                 </div>
-              </div>
-              <blockquote className="text-xs md:text-sm text-slate-600 italic line-clamp-5 md:line-clamp-none">
-                "{testimonial.quote}"
-              </blockquote>
-            </div>
+              </HoverCardTrigger>
+              <HoverCardContent className="w-80 p-0 bg-primary/95 text-white border-primary shadow-lg">
+                <div className="p-4">
+                  <div className="flex items-center mb-3">
+                    <img 
+                      src={testimonial.avatar} 
+                      alt={testimonial.name} 
+                      className="h-12 w-12 rounded-full mr-3 border-2 border-white/30"
+                    />
+                    <div>
+                      <h4 className="font-bold text-base">{testimonial.name}</h4>
+                      <p className="text-xs text-white/80">{testimonial.title}</p>
+                    </div>
+                  </div>
+                  <blockquote className="text-sm italic border-l-2 border-white/30 pl-3">
+                    "{testimonial.quote}"
+                  </blockquote>
+                </div>
+              </HoverCardContent>
+            </HoverCard>
           ))}
         </div>
       </div>

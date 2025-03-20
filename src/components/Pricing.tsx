@@ -17,7 +17,7 @@ const Pricing = () => {
         </div>
         
         <div className="grid md:grid-cols-3 gap-5 md:gap-8 max-w-5xl mx-auto">
-          <div className="bg-white rounded-xl md:rounded-2xl p-5 md:p-8 border border-slate-200 shadow-sm animate-fade-in-up" style={{ animationDelay: "100ms" }}>
+          <div className="bg-white rounded-xl md:rounded-2xl p-5 md:p-8 border border-slate-200 shadow-sm animate-fade-in-up transition-all duration-300 hover:shadow-lg hover:translate-y-[-8px]" style={{ animationDelay: "100ms" }}>
             <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2">フリープラン</h3>
             <p className="text-sm md:text-base text-slate-600 mb-4 md:mb-6">基本機能を無料で体験</p>
             <div className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">¥0 <span className="text-sm md:text-base font-normal text-slate-500">/月</span></div>
@@ -43,7 +43,7 @@ const Pricing = () => {
             </Button>
           </div>
           
-          <div className="bg-primary text-white rounded-xl md:rounded-2xl p-5 md:p-8 border border-primary shadow-lg relative animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+          <div className="bg-primary text-white rounded-xl md:rounded-2xl p-5 md:p-8 border border-primary shadow-lg relative animate-fade-in-up transition-all duration-300 hover:shadow-xl hover:translate-y-[-8px]" style={{ animationDelay: "200ms" }}>
             <div className="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-2 md:px-3 py-0.5 md:py-1 rounded-bl-lg rounded-tr-xl">
               おすすめ
             </div>
@@ -74,7 +74,7 @@ const Pricing = () => {
             </Button>
           </div>
           
-          <div className="bg-white rounded-xl md:rounded-2xl p-5 md:p-8 border border-slate-200 shadow-sm animate-fade-in-up" style={{ animationDelay: "300ms" }}>
+          <div className="bg-white rounded-xl md:rounded-2xl p-5 md:p-8 border border-slate-200 shadow-sm animate-fade-in-up transition-all duration-300 hover:shadow-lg hover:translate-y-[-8px]" style={{ animationDelay: "300ms" }}>
             <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2">プロフェッショナル</h3>
             <p className="text-sm md:text-base text-slate-600 mb-4 md:mb-6">ビジネス利用に最適</p>
             <div className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">¥1,980 <span className="text-sm md:text-base font-normal text-slate-500">/月</span></div>
