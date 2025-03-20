@@ -12,20 +12,20 @@ const Features = () => {
             あらゆる思考に対応する<span className="text-primary">強力な</span>ツールセット
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            時間のない中でもメモを書き、インターフェースはシンプルです。そして強い機能があることが大切です。全ての機能が連携してアイデアを形にしていただけるようにしています。
+            書くだけでは覚えれない。そんな方に。書いた文字が音声になり、何度も聞いて定着できたらどうでしょう？勉強や学習はもちろん、仕事ではアイデアや会議の議事録にも使えます。
           </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
           <FeatureCard 
-            title="手書きノートの音声化"
+            title="手書き文字の音声化"
             description="ノートで書いたメモや学習内容をAI音声で読み上げ、聴覚的な記憶定着をサポートします。"
             icon={<Mic className="h-8 w-8" />}
             delay={100}
           />
           
           <FeatureCard 
-            title="テキストメモの音声化"
+            title="テキストデータの音声化"
             description="アプリ内で入力したテキストや、コピーしてきた文章を自然なAI音声で読み上げます。"
             icon={<Edit className="h-8 w-8" />}
             delay={200}

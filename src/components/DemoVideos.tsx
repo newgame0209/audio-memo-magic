@@ -28,7 +28,7 @@ const DemoVideos = () => {
               </video>
             </div>
             <div className="p-3 md:p-5">
-              <h3 className="font-semibold text-base md:text-lg mb-1 md:mb-2">ノートの音声化</h3>
+              <h3 className="font-semibold text-base md:text-lg mb-1 md:mb-2">手書き文字の音声化</h3>
               <p className="text-slate-600 text-xs md:text-sm">
                 手書きノートをAIが認識して音声に変換する様子をご覧ください。勉強内容の記憶定着に最適です。
               </p>

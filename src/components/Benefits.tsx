@@ -47,7 +47,7 @@ const Benefits = () => {
           
           <div className="animate-fade-in-up" style={{ animationDelay: "200ms" }}>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              しゃべるノート <span className="text-primary">Plus</span> で<br />
+              しゃべるノートで<br />
               効率的な学習体験を
             </h2>
             <p className="text-lg text-slate-600 mb-6">

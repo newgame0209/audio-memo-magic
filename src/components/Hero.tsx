@@ -16,7 +16,7 @@ const Hero = () => {
             <span className="text-primary">聞いて</span>定着する。
           </h1>
           <p className="text-base md:text-lg text-slate-600 mb-6 md:mb-8 max-w-xl">
-            iPadやiPhoneで手書きしたメモや記録をAIが音声化し、リピート再生で記憶定着を助けるノートアプリです。
+            iPadやiPhoneで手書きしたメモや勉強の記録をAIが音声化し、リピート再生することで記憶の定着を助けるノートアプリ。
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Button className="btn-primary flex items-center group text-sm sm:text-base py-5 sm:py-6 w-full sm:w-auto justify-center">
