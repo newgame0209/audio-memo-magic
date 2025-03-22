@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer className="bg-slate-50 py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-12">
-          <div className="md:col-span-2">
+        <div className="grid md:grid-cols-3 gap-12">
+          <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <Pencil className="h-5 w-5 text-primary" />
               <span className="font-bold text-xl">しゃべるノート</span>
@@ -55,53 +55,51 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="md:col-span-2 grid grid-cols-2 gap-12">
-            <div>
-              <h4 className="font-semibold text-lg mb-6">製品</h4>
-              <ul className="space-y-4">
-                <li>
-                  <Link to="/#features" className="text-slate-600 hover:text-primary transition-colors">
-                    機能
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/#pricing" className="text-slate-600 hover:text-primary transition-colors">
-                    料金プラン
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/#faq" className="text-slate-600 hover:text-primary transition-colors">
-                    よくある質問
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          <div className="md:col-span-1">
+            <h4 className="font-semibold text-lg mb-6">製品</h4>
+            <ul className="space-y-4">
+              <li>
+                <Link to="/#features" className="text-slate-600 hover:text-primary transition-colors">
+                  機能
+                </Link>
+              </li>
+              <li>
+                <Link to="/#pricing" className="text-slate-600 hover:text-primary transition-colors">
+                  料金プラン
+                </Link>
+              </li>
+              <li>
+                <Link to="/#faq" className="text-slate-600 hover:text-primary transition-colors">
+                  よくある質問
+                </Link>
+              </li>
+            </ul>
+          </div>
             
-            <div>
-              <h4 className="font-semibold text-lg mb-6">会社情報</h4>
-              <ul className="space-y-4">
-                <li>
-                  <a 
-                    href="https://jikkenpro.netlify.app/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-slate-600 hover:text-primary transition-colors"
-                  >
-                    私たちについて
-                  </a>
-                </li>
-                <li>
-                  <Link to="/privacy" className="text-slate-600 hover:text-primary transition-colors">
-                    プライバシーポリシー
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/terms" className="text-slate-600 hover:text-primary transition-colors">
-                    利用規約
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          <div className="md:col-span-1">
+            <h4 className="font-semibold text-lg mb-6">会社情報</h4>
+            <ul className="space-y-4">
+              <li>
+                <a 
+                  href="https://jikkenpro.netlify.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-slate-600 hover:text-primary transition-colors"
+                >
+                  私たちについて
+                </a>
+              </li>
+              <li>
+                <Link to="/privacy" className="text-slate-600 hover:text-primary transition-colors">
+                  プライバシーポリシー
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms" className="text-slate-600 hover:text-primary transition-colors">
+                  利用規約
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
         
