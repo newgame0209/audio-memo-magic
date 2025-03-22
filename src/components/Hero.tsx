@@ -19,11 +19,18 @@ const Hero = () => {
             iPadやiPhoneで手書きしたメモや勉強の記録をAIが音声化し、リピート再生することで記憶の定着を助けるノートアプリ。
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <Button className="btn-primary flex items-center group text-sm sm:text-base py-5 sm:py-6 w-full sm:w-auto justify-center">
+            <Button 
+              className="btn-primary flex items-center group text-sm sm:text-base py-5 sm:py-6 w-full sm:w-auto justify-center"
+              onClick={() => window.open('https://mynote-psi-three.vercel.app/', '_blank')}
+            >
               無料で始める
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="outline" className="btn-secondary text-sm sm:text-base py-5 sm:py-6 w-full sm:w-auto justify-center mt-3 sm:mt-0">
+            <Button 
+              variant="outline" 
+              className="btn-secondary text-sm sm:text-base py-5 sm:py-6 w-full sm:w-auto justify-center mt-3 sm:mt-0"
+              onClick={() => document.getElementById('features').scrollIntoView({ behavior: 'smooth' })}
+            >
               機能をもっと見る
             </Button>
           </div>

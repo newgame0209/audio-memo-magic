@@ -18,19 +18,19 @@ const Footer = () => {
               新しい記憶の定着方法。
             </p>
             <div className="flex space-x-4">
-              <a href="#twitter" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
+              <a href="https://mynote-psi-three.vercel.app/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
                 <span className="sr-only">Twitter</span>
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#facebook" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
+              <a href="https://mynote-psi-three.vercel.app/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
                 <span className="sr-only">Facebook</span>
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#instagram" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
+              <a href="https://mynote-psi-three.vercel.app/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
                 <span className="sr-only">Instagram</span>
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#youtube" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
+              <a href="https://mynote-psi-three.vercel.app/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
                 <span className="sr-only">Youtube</span>
                 <Youtube className="h-5 w-5" />
               </a>
@@ -63,7 +63,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a 
-                  href="https://jikkenpro.netlify.app/" 
+                  href="https://mynote-psi-three.vercel.app/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-slate-600 hover:text-primary transition-colors"
@@ -72,14 +72,24 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <Link to="/privacy" className="text-slate-600 hover:text-primary transition-colors">
+                <a 
+                  href="https://mynote-psi-three.vercel.app/privacy" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-slate-600 hover:text-primary transition-colors"
+                >
                   プライバシーポリシー
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/terms" className="text-slate-600 hover:text-primary transition-colors">
+                <a 
+                  href="https://mynote-psi-three.vercel.app/terms" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-slate-600 hover:text-primary transition-colors"
+                >
                   利用規約
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

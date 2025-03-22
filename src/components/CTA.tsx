@@ -61,9 +61,9 @@ const CTA = () => {
                 variants={fadeInUp}
               >
                 {[
-                  { icon: <Star className="h-5 w-5" />, text: "無料アカウント作成" },
-                  { icon: <MessageCircle className="h-5 w-5" />, text: "メモを作成" },
-                  { icon: <PlayCircle className="h-5 w-5" />, text: "音声で聞いて学習" }
+                  { icon: <Star className="h-5 w-5" />, text: "無料アカウントを作成" },
+                  { icon: <MessageCircle className="h-5 w-5" />, text: "メモやノートを作成して学習開始" },
+                  { icon: <PlayCircle className="h-5 w-5" />, text: "リピートして覚えるために文字を音声に変換" }
                 ].map((step, index) => (
                   <div key={index} className="flex items-center bg-white/10 rounded-full px-4 py-2">
                     <div className="bg-white/20 rounded-full p-1 mr-2 flex-shrink-0">
@@ -85,6 +85,7 @@ const CTA = () => {
                   className="bg-white text-primary hover:bg-white/90 text-base py-6 px-8 rounded-full group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => window.open('https://mynote-psi-three.vercel.app/', '_blank')}
                 >
                   無料で始める
                   <motion.span
@@ -99,6 +100,7 @@ const CTA = () => {
                   className="border-white/30 bg-white/10 hover:bg-white/20 text-white text-base py-6 px-8 rounded-full flex items-center"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => window.open('https://mynote-psi-three.vercel.app/', '_blank')}
                 >
                   デモを見る
                   <ArrowRight className="ml-2 h-4 w-4" />
