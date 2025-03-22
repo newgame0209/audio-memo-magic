@@ -12,7 +12,7 @@ export interface TestimonialCategories {
   students: Testimonial[];
   business: Testimonial[];
   education: Testimonial[];
-  [key: string]: Testimonial[];
+  [key: string]: Testimonial[]; // This allows for string indexing
 }
 
 // テスティモニアルデータを強化し、カテゴリを追加
