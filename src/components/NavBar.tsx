@@ -40,8 +40,11 @@ const NavBar = () => {
         </nav>
         
         <div className="flex items-center space-x-4">
-          <a href="/login" className="text-sm font-medium text-slate-600 hover:text-primary transition-colors hidden md:block">ログイン</a>
-          <Button className="rounded-full bg-primary hover:bg-primary/90 text-white">
+          <a href="https://mynote-psi-three.vercel.app/login" className="text-sm font-medium text-slate-600 hover:text-primary transition-colors hidden md:block">ログイン</a>
+          <Button 
+            className="rounded-full bg-primary hover:bg-primary/90 text-white"
+            onClick={() => window.open('https://mynote-psi-three.vercel.app/', '_blank')}
+          >
             無料で始める
           </Button>
         </div>
