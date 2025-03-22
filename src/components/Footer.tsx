@@ -41,19 +41,19 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-6">製品</h4>
             <ul className="space-y-4">
               <li>
-                <Link to="/#features" className="text-slate-600 hover:text-primary transition-colors">
+                <a href="#features" className="text-slate-600 hover:text-primary transition-colors">
                   機能
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/#pricing" className="text-slate-600 hover:text-primary transition-colors">
+                <a href="#pricing" className="text-slate-600 hover:text-primary transition-colors">
                   料金プラン
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/#faq" className="text-slate-600 hover:text-primary transition-colors">
+                <a href="#faq" className="text-slate-600 hover:text-primary transition-colors">
                   よくある質問
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -63,7 +63,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a 
-                  href="https://mynote-psi-three.vercel.app/" 
+                  href="https://jikkenpro.netlify.app/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-slate-600 hover:text-primary transition-colors"
@@ -73,9 +73,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://mynote-psi-three.vercel.app/privacy" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  href="#" 
                   className="text-slate-600 hover:text-primary transition-colors"
                 >
                   プライバシーポリシー
@@ -83,9 +81,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://mynote-psi-three.vercel.app/terms" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  href="#" 
                   className="text-slate-600 hover:text-primary transition-colors"
                 >
                   利用規約
