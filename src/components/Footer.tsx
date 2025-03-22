@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Pencil } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -7,7 +8,7 @@ const Footer = () => {
     <footer className="bg-slate-50 py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12">
-          <div className="md:col-span-1">
+          <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Pencil className="h-5 w-5 text-primary" />
               <span className="font-bold text-xl">しゃべるノート</span>
@@ -54,7 +55,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="md:col-span-3 grid grid-cols-2 gap-12">
+          <div className="md:col-span-2 grid grid-cols-2 gap-12">
             <div>
               <h4 className="font-semibold text-lg mb-6">製品</h4>
               <ul className="space-y-4">
