@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Pencil } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -55,11 +54,10 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="md:col-span-3 grid grid-cols-2 gap-8">
+          <div className="md:col-span-3 grid grid-cols-2 gap-12">
             <div>
-              <h4 className="font-semibold text-lg mb-4">製品</h4>
-              <ul className="space-y-2">
-                {/* Changed to internal links and removed roadmap and download */}
+              <h4 className="font-semibold text-lg mb-6">製品</h4>
+              <ul className="space-y-4">
                 <li>
                   <Link to="/#features" className="text-slate-600 hover:text-primary transition-colors">
                     機能
@@ -79,9 +77,8 @@ const Footer = () => {
             </div>
             
             <div>
-              <h4 className="font-semibold text-lg mb-4">会社情報</h4>
-              <ul className="space-y-2">
-                {/* Set external link for About Us and removed team and careers */}
+              <h4 className="font-semibold text-lg mb-6">会社情報</h4>
+              <ul className="space-y-4">
                 <li>
                   <a 
                     href="https://jikkenpro.netlify.app/" 
