@@ -1,4 +1,3 @@
-
 export interface Testimonial {
   name: string;
   title: string;
@@ -8,11 +7,14 @@ export interface Testimonial {
   result: string;
 }
 
+// Use a more specific interface with only string literal properties
 export interface TestimonialCategories {
   students: Testimonial[];
   business: Testimonial[];
   education: Testimonial[];
-  [key: string]: Testimonial[]; // This allows for string indexing
+  // We're keeping the string index signature for flexibility,
+  // but our components will only use the specific string literals
+  [key: string]: Testimonial[];
 }
 
 // テスティモニアルデータを強化し、カテゴリを追加

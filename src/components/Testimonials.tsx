@@ -5,8 +5,12 @@ import TestimonialStats from './testimonials/TestimonialStats';
 import TestimonialCategories from './testimonials/TestimonialCategories';
 import { testimonialsByCategory, TestimonialCategories as TestimonialCategoriesType } from '@/data/testimonialData';
 
+// Define string literal type for our categories to ensure type safety
+type CategoryKey = 'students' | 'business' | 'education';
+
 const Testimonials = () => {
-  const [category, setCategory] = useState<keyof TestimonialCategoriesType>("students");
+  // Use the specific string literal type for state
+  const [category, setCategory] = useState<CategoryKey>("students");
 
   return (
     <section id="testimonials" className="py-10 md:py-20 px-4 md:px-12 relative">
@@ -30,7 +34,7 @@ const Testimonials = () => {
         <Tabs 
           defaultValue="students" 
           value={category} 
-          onValueChange={(value) => setCategory(value as keyof TestimonialCategoriesType)} 
+          onValueChange={(value) => setCategory(value as CategoryKey)} 
           className="mb-8"
         >
           <TabsList className="mx-auto flex justify-center mb-6 p-1 bg-secondary">
