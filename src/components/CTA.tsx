@@ -25,6 +25,9 @@ const staggerContainer = {
   }
 };
 
+// Create a motion button component
+const MotionButton = motion(Button);
+
 const CTA = () => {
   return (
     <section className="py-24 px-6 md:px-12">
@@ -78,11 +81,10 @@ const CTA = () => {
                 className="flex flex-col sm:flex-row justify-center gap-4"
                 variants={fadeInUp}
               >
-                <Button 
+                <MotionButton 
                   className="bg-white text-primary hover:bg-white/90 text-base py-6 px-8 rounded-full group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  as={motion.button}
                 >
                   無料で始める
                   <motion.span
@@ -91,17 +93,16 @@ const CTA = () => {
                   >
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </motion.span>
-                </Button>
-                <Button 
+                </MotionButton>
+                <MotionButton 
                   variant="outline" 
                   className="border-white/30 bg-white/10 hover:bg-white/20 text-white text-base py-6 px-8 rounded-full flex items-center"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  as={motion.button}
                 >
                   デモを見る
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                </MotionButton>
               </motion.div>
               
               {/* ソーシャルプルーフ */}
