@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Pencil } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -54,43 +55,53 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="md:col-span-3 grid grid-cols-2 gap-8">
             <div>
               <h4 className="font-semibold text-lg mb-4">製品</h4>
               <ul className="space-y-2">
-                {['機能', '料金プラン', 'よくある質問', 'ダウンロード', 'ロードマップ'].map((item) => (
-                  <li key={item}>
-                    <a href="#" className="text-slate-600 hover:text-primary transition-colors">
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold text-lg mb-4">リソース</h4>
-              <ul className="space-y-2">
-                {['ブログ', 'チュートリアル', 'ガイド', 'サポート', 'APIドキュメント'].map((item) => (
-                  <li key={item}>
-                    <a href="#" className="text-slate-600 hover:text-primary transition-colors">
-                      {item}
-                    </a>
-                  </li>
-                ))}
+                {/* Changed to internal links and removed roadmap and download */}
+                <li>
+                  <Link to="/#features" className="text-slate-600 hover:text-primary transition-colors">
+                    機能
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/#pricing" className="text-slate-600 hover:text-primary transition-colors">
+                    料金プラン
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/#faq" className="text-slate-600 hover:text-primary transition-colors">
+                    よくある質問
+                  </Link>
+                </li>
               </ul>
             </div>
             
             <div>
               <h4 className="font-semibold text-lg mb-4">会社情報</h4>
               <ul className="space-y-2">
-                {['私たちについて', 'チーム', '採用情報', 'プライバシーポリシー', '利用規約'].map((item) => (
-                  <li key={item}>
-                    <a href="#" className="text-slate-600 hover:text-primary transition-colors">
-                      {item}
-                    </a>
-                  </li>
-                ))}
+                {/* Set external link for About Us and removed team and careers */}
+                <li>
+                  <a 
+                    href="https://jikkenpro.netlify.app/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-slate-600 hover:text-primary transition-colors"
+                  >
+                    私たちについて
+                  </a>
+                </li>
+                <li>
+                  <Link to="/privacy" className="text-slate-600 hover:text-primary transition-colors">
+                    プライバシーポリシー
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/terms" className="text-slate-600 hover:text-primary transition-colors">
+                    利用規約
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
