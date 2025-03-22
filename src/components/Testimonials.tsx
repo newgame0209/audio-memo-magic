@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { HoverCard, HoverCardTrigger, HoverCardContent } from '@/components/ui/hover-card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -202,49 +201,6 @@ const Testimonials = () => {
             </TabsContent>
           ))}
         </Tabs>
-        
-        {/* フィードバックフォーム */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mt-12 max-w-xl mx-auto bg-white p-6 rounded-xl shadow-sm border border-slate-200"
-        >
-          <h3 className="text-lg md:text-xl font-bold mb-4">あなたの声をお聞かせください</h3>
-          <p className="text-sm text-slate-600 mb-4">製品の改善やご要望など、フィードバックをお寄せください。</p>
-          
-          <form className="space-y-4">
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
-                メールアドレス
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-3 py-2 border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
-                placeholder="your@email.com"
-              />
-            </div>
-            <div>
-              <label htmlFor="feedback" className="block text-sm font-medium text-slate-700 mb-1">
-                フィードバック
-              </label>
-              <textarea
-                id="feedback"
-                rows={4}
-                className="w-full px-3 py-2 border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
-                placeholder="ご意見やご感想をお聞かせください"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
-            >
-              送信する
-            </button>
-          </form>
-        </motion.div>
       </div>
     </section>
   );

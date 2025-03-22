@@ -8,6 +8,7 @@ import DemoVideos from '@/components/DemoVideos';
 import Testimonials from '@/components/Testimonials';
 import Pricing from '@/components/Pricing';
 import CTA from '@/components/CTA';
+import FeedbackForm from '@/components/FeedbackForm';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -27,6 +28,7 @@ const Index = () => {
         <Testimonials />
         <Pricing />
         <CTA />
+        <FeedbackForm />
       </main>
       <Footer />
     </div>
