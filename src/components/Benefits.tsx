@@ -47,19 +47,19 @@ const Benefits = () => {
           
           <div className="animate-fade-in-up" style={{ animationDelay: "200ms" }}>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              しゃべるノートで<br />
-              効率的な学習体験を
+              学びやすさを<br />
+              重視した設計
             </h2>
             <p className="text-lg text-slate-600 mb-6">
-              ノート+リスニングのダブル学習で記憶の定着率が大幅にアップ。研究によると、視覚と聴覚の両方で学ぶことで記憶保持率が最大75%向上します。
+              文字の読み書きに困難を感じる方の声を聞き、専門家の監修のもと開発された学習支援ツールです。音声とテキストの組み合わせにより、学習効率の向上を実現します。
             </p>
             
             <div className="space-y-4 mb-8">
               {[
-                "手書きメモを瞬時に音声化",
-                "スキマ時間に聞き流し学習",
-                "記憶の定着率が大幅アップ",
-                "学習効率の向上を実感"
+                "文字の読み書きの負担を軽減",
+                "音声でのリアルタイムフィードバック",
+                "個々のペースに合わせた学習",
+                "専門家監修の学習支援機能"
               ].map((item, index) => (
                 <div key={index} className="flex items-start">
                   <div className="h-5 w-5 mr-3 text-primary mt-0.5">
@@ -70,8 +70,11 @@ const Benefits = () => {
               ))}
             </div>
             
-            <Button className="btn-primary flex items-center group">
-              プレミアム機能を見る
+            <Button 
+              className="btn-primary flex items-center group"
+              onClick={() => window.open('https://mynote-psi-three.vercel.app/', '_blank')}
+            >
+              無料で始める
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>

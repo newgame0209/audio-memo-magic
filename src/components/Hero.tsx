@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, BookOpen, Brain, HeadphonesIcon } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -9,14 +9,14 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div className="animate-fade-in-up">
           <div className="inline-block bg-secondary px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium text-primary mb-4 md:mb-6">
-            新しい記憶の定着方法
+            学習障害・ディスレクシアに寄り添うノートアプリ
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
-            書いて覚える。<br />
-            <span className="text-primary">聞いて</span>定着する。
+            文字の壁を超えて、<br />
+            <span className="text-primary">学ぶ喜び</span>を。
           </h1>
           <p className="text-base md:text-lg text-slate-600 mb-6 md:mb-8 max-w-xl">
-            iPadやiPhoneで手書きしたメモや勉強の記録をAIが音声化し、リピート再生することで記憶の定着を助けるノートアプリ。
+            文字の読み書きに困難を感じる方のために。手書きやテキストをAIが音声化し、マルチセンソリーな学習体験をサポートします。
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Button 

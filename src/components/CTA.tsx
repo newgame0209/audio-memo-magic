@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Star, MessageCircle, PlayCircle } from 'lucide-react';
+import { ArrowRight, BookOpen, HeadphonesIcon, Brain } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const fadeInUp = {
@@ -25,7 +24,6 @@ const staggerContainer = {
   }
 };
 
-// Create a motion button component
 const MotionButton = motion(Button);
 
 const CTA = () => {
@@ -46,24 +44,24 @@ const CTA = () => {
                 className="text-3xl md:text-4xl font-bold mb-6 leading-tight"
                 variants={fadeInUp}
               >
-                記憶力を高め、学習効率をアップさせる<br />新しいノートの形
+                文字の壁を超えて、<br />
+                新しい学びの可能性を。
               </motion.h2>
               <motion.p 
                 className="text-xl mb-8 opacity-90"
                 variants={fadeInUp}
               >
-                今すぐしゃべるノートで、学習体験を変革しましょう
+                学習障害やディスレクシアがあっても、学ぶ楽しさを感じられるように。
               </motion.p>
               
-              {/* 簡単な3ステップ */}
               <motion.div 
                 className="flex flex-col md:flex-row justify-center gap-4 mb-10"
                 variants={fadeInUp}
               >
                 {[
-                  { icon: <Star className="h-5 w-5" />, text: "無料アカウントを作成" },
-                  { icon: <MessageCircle className="h-5 w-5" />, text: "メモやノートを作成して学習開始" },
-                  { icon: <PlayCircle className="h-5 w-5" />, text: "リピートして覚えるために文字を音声に変換" }
+                  { icon: <BookOpen className="h-5 w-5" />, text: "無料アカウントを作成" },
+                  { icon: <Brain className="h-5 w-5" />, text: "メモやノートを作成して学習開始" },
+                  { icon: <HeadphonesIcon className="h-5 w-5" />, text: "リピートして覚えるために文字を音声に変換" }
                 ].map((step, index) => (
                   <div key={index} className="flex items-center bg-white/10 rounded-full px-4 py-2">
                     <div className="bg-white/20 rounded-full p-1 mr-2 flex-shrink-0">
@@ -81,43 +79,21 @@ const CTA = () => {
                 className="flex flex-col sm:flex-row justify-center gap-4"
                 variants={fadeInUp}
               >
-                <MotionButton 
+                <Button 
                   className="bg-white text-primary hover:bg-white/90 text-base py-6 px-8 rounded-full group"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
                   onClick={() => window.open('https://mynote-psi-three.vercel.app/', '_blank')}
                 >
                   無料で始める
-                  <motion.span
-                    animate={{ x: [0, 5, 0] }}
-                    transition={{ repeat: Infinity, duration: 1.5, repeatDelay: 1 }}
-                  >
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </motion.span>
-                </MotionButton>
-                <MotionButton 
-                  variant="outline" 
-                  className="border-white/30 bg-white/10 hover:bg-white/20 text-white text-base py-6 px-8 rounded-full flex items-center"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => window.open('https://mynote-psi-three.vercel.app/', '_blank')}
-                >
-                  デモを見る
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </MotionButton>
-              </motion.div>
-              
-              {/* ソーシャルプルーフ */}
-              <motion.div 
-                className="mt-8 pt-6 border-t border-white/20 text-center"
-                variants={fadeInUp}
-              >
-                <p className="text-sm opacity-80 mb-2">10,000人以上のユーザーが信頼しています</p>
-                <div className="flex justify-center space-x-4">
-                  <div className="bg-white/10 rounded-md px-3 py-1 text-xs">App Store 4.8★</div>
-                  <div className="bg-white/10 rounded-md px-3 py-1 text-xs">50+ 大学で利用</div>
-                  <div className="bg-white/10 rounded-md px-3 py-1 text-xs">98% 満足度</div>
-                </div>
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="border-white/30 bg-white/10 hover:bg-white/20 text-white text-base py-6 px-8 rounded-full"
+                  onClick={() => document.getElementById('features').scrollIntoView({ behavior: 'smooth' })}
+                >
+                  機能を見る
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
               </motion.div>
             </motion.div>
           </div>
