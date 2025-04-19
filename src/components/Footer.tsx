@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Pencil, Twitter, Facebook, Instagram, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -47,7 +46,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#pricing" className="text-slate-600 hover:text-primary transition-colors">
-                  料金プラン
+                  β版について
                 </a>
               </li>
               <li>
