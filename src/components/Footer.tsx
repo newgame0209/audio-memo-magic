@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Pencil, Twitter, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Pencil } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -16,24 +17,6 @@ const Footer = () => {
               書いて覚える。聞いて定着する。<br />
               新しい記憶の定着方法。
             </p>
-            <div className="flex space-x-4">
-              <a href="https://mynote-psi-three.vercel.app/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
-                <span className="sr-only">Twitter</span>
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="https://mynote-psi-three.vercel.app/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
-                <span className="sr-only">Facebook</span>
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="https://mynote-psi-three.vercel.app/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
-                <span className="sr-only">Instagram</span>
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="https://mynote-psi-three.vercel.app/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
-                <span className="sr-only">Youtube</span>
-                <Youtube className="h-5 w-5" />
-              </a>
-            </div>
           </div>
           
           <div className="md:col-span-1">
@@ -62,7 +45,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a 
-                  href="https://jikkenpro.netlify.app/" 
+                  href="https://jikken.site/about" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-slate-600 hover:text-primary transition-colors"
@@ -71,20 +54,20 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a 
-                  href="#" 
+                <Link 
+                  to="/privacy-policy" 
                   className="text-slate-600 hover:text-primary transition-colors"
                 >
                   プライバシーポリシー
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href="#" 
+                <Link 
+                  to="/terms" 
                   className="text-slate-600 hover:text-primary transition-colors"
                 >
                   利用規約
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
