@@ -1,6 +1,6 @@
+
 import React from 'react';
 import { Pencil, Twitter, Facebook, Instagram, Youtube } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
